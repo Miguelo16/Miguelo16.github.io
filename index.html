@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Técnico en Sistemas y Redes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e293b;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: #94a3b8;
+    }
+
+    nav {
+      background-color: #0f172a;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #facc15;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background-color: #1e293b;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .card h2 {
+      margin-bottom: 1rem;
+      color: #38bdf8;
+    }
+
+    .skills-list, .projects-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .skills-list li, .projects-list li {
+      list-style: none;
+      background-color: #334155;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1e293b;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tu Nombre</h1>
+    <p>Técnico en Administración de Sistemas Informáticos y Redes</p>
+  </header>
+
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="sobre-mi" class="card">
+    <h2>Sobre mí</h2>
+    <p>Soy un profesional con experiencia en la administración de sistemas informáticos, redes y servicios IT. Me apasiona garantizar el funcionamiento eficiente y seguro de infraestructuras tecnológicas, trabajando tanto con hardware como software, y automatizando procesos para mejorar el rendimiento del sistema.</p>
+  </section>
+
+  <section id="habilidades" class="card">
+    <h2>Habilidades Técnicas</h2>
+    <ul class="skills-list">
+      <li>Administración Linux y Windows</li>
+      <li>Redes TCP/IP y seguridad</li>
+      <li>Virtualización (VMware, Hyper-V)</li>
+      <li>Docker & Kubernetes</li>
+      <li>Automatización con Ansible</li>
+      <li>Monitorización (Zabbix, Nagios)</li>
+      <li>Gestión de backups y recuperación</li>
+      <li>Servidores web y bases de datos</li>
+    </ul>
+  </section>
+
+  <section id="proyectos" class="card">
+    <h2>Proyectos Destacados</h2>
+    <ul class="projects-list">
+      <li>
+        <strong>Infraestructura híbrida para PYME</strong><br>
+        Diseño e implementación de una red con VPN, servicios en la nube y servidores locales.
+      </li>
+      <li>
+        <strong>Panel de monitorización personalizado</strong><br>
+        Desarrollo de un entorno de control centralizado usando Grafana y Prometheus.
+      </li>
+      <li>
+        <strong>Automatización de despliegue con Ansible</strong><br>
+        Creación de playbooks para provisionamiento automático de servidores y servicios.
+      </li>
+    </ul>
+  </section>
+
+  <section id="contacto" class="card">
+    <h2>Contacto</h2>
+    <p>¿Quieres trabajar conmigo o necesitas soporte técnico? ¡Hablemos!</p>
+    <p>Email: tunombre@correo.com</p>
+    <p>LinkedIn: <a href="#" style="color:#38bdf8;">linkedin.com/in/tuusuario</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tu Nombre - Técnico en Sistemas</p>
+  </footer>
+</body>
+</html>
