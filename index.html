@@ -21,8 +21,20 @@
 
     header {
       background-color: #1e293b;
-      padding: 2rem;
+      padding: 1rem;
       text-align: center;
+      position:relative;
+      top: 0;
+      z-index: 500;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #38bdf8;
+      margin-bottom: 1rem;
     }
 
     header h1 {
@@ -35,11 +47,14 @@
     }
 
     nav {
-      background-color: #0f172a;
+      background-color: #1e293b;
       display: flex;
       justify-content: center;
       gap: 2rem;
       padding: 1rem;
+      position:static;
+      top: 100px;
+      z-index: 999;
     }
 
     nav a {
@@ -86,6 +101,24 @@
       text-align: center;
     }
 
+    .contact-icons {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact-icons a img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s;
+    }
+
+    .contact-icons a img:hover {
+      transform: scale(1.1);
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -96,21 +129,24 @@
 </head>
 <body>
   <header>
-    <h1>Tu Nombre</h1>
+    <img src="Foto_Perfil_redes trabajo.png" alt="Foto de perfil" class="profile-img" >
+    <h1>Miguel Ángel Román Hernández</h1>
     <p>Técnico en Administración de Sistemas Informáticos y Redes</p>
+    <nav>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
   </header>
-
-  <nav>
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#habilidades">Habilidades</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
 
   <section id="sobre-mi" class="card">
     <h2>Sobre mí</h2>
-    <p>Soy un profesional con experiencia en la administración de sistemas informáticos, redes y servicios IT. Me apasiona garantizar el funcionamiento eficiente y seguro de infraestructuras tecnológicas, trabajando tanto con hardware como software, y automatizando procesos para mejorar el rendimiento del sistema.</p>
-  </section>
+    <p>Soy un profesional de las TI con mas de 10 años de experiencia en varios campos. Tengo amplia experiencia en diversos campos de las telecomunicaciones como la instalacion fisica y configuracion de equipos de transmision y comunicaciones para todo tipo de clientes.
+    <p>Tengo experiencia en el campo de telecomunicaciones en infraestrucutra red fija(FTTH, ADSL, DSL, HFC)</p>
+    <p>Tengo experiencia en el campo de telecomunicaciones en infraestrucutra red móvil(LTE(4G), WCDMA(3G), DCS/GSM(2G))</p>
+    <p>Tengo experiencia en el campo de telecomunicaciones en soporte tecnico avanzado NOC</p>
+    </section>
 
   <section id="habilidades" class="card">
     <h2>Habilidades Técnicas</h2>
@@ -119,8 +155,8 @@
       <li>Redes TCP/IP y seguridad</li>
       <li>Virtualización (VMware, Hyper-V)</li>
       <li>Docker & Kubernetes</li>
-      <li>Automatización con Ansible</li>
-      <li>Monitorización (Zabbix, Nagios)</li>
+      <li>Programación python</li>
+      <li>Monitorización (Nagios, CACTI, PRTG, Grafana)</li>
       <li>Gestión de backups y recuperación</li>
       <li>Servidores web y bases de datos</li>
     </ul>
@@ -143,16 +179,17 @@
       </li>
     </ul>
   </section>
-
   <section id="contacto" class="card">
     <h2>Contacto</h2>
-    <p>¿Quieres trabajar conmigo o necesitas soporte técnico? ¡Hablemos!</p>
-    <p>Email: tunombre@correo.com</p>
-    <p>LinkedIn: <a href="#" style="color:#38bdf8;">linkedin.com/in/tuusuario</a></p>
+    <a href="mailto:tunombre@correo.com" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="42", height="45">
+    </a>
+    <a href="https://www.linkedin.com/in/tuusuario" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"width="42", height="45">
+    </a>
   </section>
-
   <footer>
-    <p>&copy; 2025 Tu Nombre - Técnico en Sistemas</p>
+    <p>&copy; 2025 Miguel Ángel Román Hernández - Técnico en Sistemas</p>
   </footer>
 </body>
 </html>
