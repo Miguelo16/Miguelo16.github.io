@@ -2,6 +2,7 @@
 <h3 align="center">Administrador de sistemas informáticos y redes</h3>
 
 - 👨‍💻 Mi portafolio [miguelo16.github.io](miguelo16.github.io)
+- Rincón de estudio [ROMATIC](https://campaign-cindy-witness-sweet.trycloudflare.com/)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
